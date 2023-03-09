@@ -1,0 +1,2 @@
+# HighFrequencyUseModule
+HighFrequencyUseModule：USART、CAN
