@@ -1,6 +1,7 @@
 
 /* Includes ------------------------------------------------------------------*/
-#include "stdint.h"
+#include <stdint.h>
+
 
 /* USER CODE BEGIN Includes */
 #define UART_Rx_BUFF_SIZE 1024

@@ -10,7 +10,7 @@
       <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
+      <pCCUsed>5060300::V5.06 update 3 (build 300)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F103RB</Device>
@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Peripheral</IncludePath>
+              <IncludePath>.\Source\Application;.\Source\PeripheralDriver_MCU</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -377,12 +377,27 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Peripheral</GroupName>
+          <GroupName>Application</GroupName>
           <Files>
+            <File>
+              <FileName>usart_process.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Source\Application\usart_process.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>PeripheralDriver_MCU</GroupName>
+          <Files>
+            <File>
+              <FileName>crc_cal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Source\PeripheralDriver_MCU\crc_cal.c</FilePath>
+            </File>
             <File>
               <FileName>usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Peripheral\usart.c</FilePath>
+              <FilePath>.\Source\PeripheralDriver_MCU\usart.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -57,7 +57,7 @@ void UART_DelChar(USART_Buf_TypeDef * ptRx, uint8_t ucNum)
 
 void UART_PutChar(USART_Register_Struct *usart, USART_Buf_TypeDef * ptTx, uint8_t ucData)
 {	
-	while ((*ptTx).ucBufCnt == (*ptTx).ucBufSize);			 //���ͻ��������ȴ������д�����������󻺳���
+	while ((*ptTx).ucBufCnt == (*ptTx).ucBufSize);			 //���ͻ��������ȴ������д�����������󻺳���?
 	usart->CR1 &= ~(0x00000080);                         //disopen interrupt TXEIE
 	if((*ptTx).ucBufCnt == 0)
 	{
